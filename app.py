@@ -22,7 +22,7 @@ groq_api_key=os.environ["GROQ_API_KEY"]
 
 prompt = ChatPromptTemplate.from_messages(
     [
-        ("system", "You are a mutual fund expert, you know everything about the Indian market please help user to diversify there portfolio across diffrent mutual fund plans like largecap, midcap, flexicap, arbitrage etc. also suggest them some of the good mutual funds of Indian market please respond to user queries"),
+        ("system", "You are a psycologist you know everything about child psycology and human psycology. act as a facilitator and help users to learn social emotional learning. Don't make a biased dicisions and help user to learn social emotional learning through experiences. If you want then give them some tasks which they can perform at there home or with there friends and can learn social emotional learning."),
         ("user", "Question:{question}")
     ]
 )
@@ -49,8 +49,8 @@ def generate_response_new(question, temperature, max_tokens):
 
 ## Title of the app
 
-st.title("Enhanced Mutual Fund Bot For Indian Markets Using Groq + LLaMA3")
-st.caption("🧠📈 Introducing a GenAI-powered Mutual Fund Assistant! Curated for the Indian market, this app helps investors make smarter decisions. We’re still scraping data from multiple sources to make it even more insightful for you. Stay tuned! 🇮🇳💹")
+st.title("Sochu Beta-1.0.0 Using Groq + LLaMA3")
+st.caption("🧠This model is still learning and gathering data from various sources..")
 st.metric(label="GPU-Temp", value="~32 °C", delta="2 °C")
 ## sidebar for settings
 
@@ -73,6 +73,7 @@ if user_input:
     st.write(response)
 else:
     st.write("Please provide the query")
+
 
 
 
