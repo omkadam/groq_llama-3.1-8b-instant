@@ -49,8 +49,9 @@ def generate_response_new(question, temperature, max_tokens):
 
 ## Title of the app
 
-st.title("Enhanced Q&A Chatbot Using Groq + LLaMA3")
-
+st.title("Enhanced Mutual Fund Bot For Indian Markets Using Groq + LLaMA3")
+st.caption("🧠📈 Introducing a GenAI-powered Mutual Fund Assistant! Curated for the Indian market, this app helps investors make smarter decisions. We’re still scraping data from multiple sources to make it even more insightful for you. Stay tuned! 🇮🇳💹")
+st.metric(label="GPU-Temp", value="~32 °C", delta="2 °C")
 ## sidebar for settings
 
 st.sidebar.title("Settings")
@@ -72,4 +73,5 @@ if user_input:
     st.write(response)
 else:
     st.write("Please provide the query")
+
 
