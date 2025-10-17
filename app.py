@@ -22,7 +22,7 @@ groq_api_key=os.environ["GROQ_API_KEY"]
 
 prompt = ChatPromptTemplate.from_messages(
     [
-        ("system", "You are a mutual fund expert please respond to user queries"),
+        ("system", "You are a mutual fund expert, you know everything about the Indian market please help user to diversify there portfolio across diffrent mutual fund plans like largecap, midcap, flexicap, arbitrage etc. also suggest them some of the good mutual funds of Indian market please respond to user queries"),
         ("user", "Question:{question}")
     ]
 )
@@ -73,5 +73,6 @@ if user_input:
     st.write(response)
 else:
     st.write("Please provide the query")
+
 
 
