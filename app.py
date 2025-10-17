@@ -61,7 +61,7 @@ st.sidebar.title("Settings")
 
 # llm = st.sidebar.selectbox("Select an OpenAI model", ["gpt4-o", "gpt-4-turbo", "gpt-4"])
 temperature = st.sidebar.slider("Temperature", min_value=0.0, max_value=1.0, value=0.7)
-max_tokens = st.sidebar.slider("Max Tokens", min_value=50, max_value=300, value=150)
+max_tokens = st.sidebar.slider("Max Tokens", min_value=50, max_value=600, value=300)
 
 ## main interface for user input
 
@@ -73,6 +73,7 @@ if user_input:
     st.write(response)
 else:
     st.write("Please provide the query")
+
 
 
 
